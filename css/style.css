@@ -1,0 +1,16 @@
+.btn{
+    width: 40px;
+}
+
+.display{
+    margin: 0 auto;
+    width: 220px;
+}
+
+.main{
+    background-color: lightblue;
+    width: 250px;
+    padding: 20px 0;
+    border-radius: 20px;
+    margin: 0 auto;
+}

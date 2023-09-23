@@ -1,3 +1,6 @@
+# Link Demo
+## https://tugascalculatorapp.netlify.app/
+
 # w6-project-calculator
 
 ## Buatlah Aplikasi Calculator menggunakan html, CSS, dan javascript.
