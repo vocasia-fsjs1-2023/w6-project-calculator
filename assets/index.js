@@ -15,8 +15,8 @@ const allClear = () => {
 
 const equal = () => {
     if (input.value == undefined || input.value == 0){
-        alert('Anda blum Menginput Nilai Apapun!');
-    } else{
+        alert('Tidak Ada Input Nilai');
+    } else {
         input.value = eval(input.value);
     }
 }
