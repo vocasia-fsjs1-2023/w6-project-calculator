@@ -1,5 +1,5 @@
 # Tampilan
-https://fahriwijayaa.github.io/calculator/
+https://fahriwijayaa.github.io/calculators/
 
 # w6-project-calculator
 
