@@ -1,0 +1,71 @@
+/* Gaya untuk container utama */
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(bg-latar.jpg);
+  position: relative;
+}
+
+.bg-white {
+  background-color: #fff;
+  background-image: url(bg-tampilan.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Gaya untuk input display */
+#display {
+  font-size: 1.5rem;
+}
+
+/* Gaya untuk judul "Kalkulator" */
+h1 {
+  color: black;
+}
+
+/* Gaya untuk tombol */
+.btn {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Gaya untuk tombol angka */
+.btn-number {
+  color: black; /* Ubah warna teks angka sesuai keinginan Anda, misalnya 'blue' */
+}
+
+.btn:hover {
+  background-color: #c3c4c8;
+}
+
+.btn-operator {
+  background-color: #f59e0b;
+  color: #fff;
+}
+
+.btn-operator:hover {
+  background-color: #e7920b;
+}
+
+.btn-clear {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.btn-clear:hover {
+  background-color: #d73737;
+}
