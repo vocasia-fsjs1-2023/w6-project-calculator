@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg box">
+        <h1 class="text-2xl mb-4">CALCULATOR</h1>
+        <input id="input" class="w-full mb-2 p-2 rounded-lg border" type="text" placeholder="Masukkan angka dan operasi">
+        <div class="flex space-x-2">
+            <button class="bg-blue-500 text-white p-2 rounded-lg" onclick="add('1')">1</button>
+            <button class="bg-blue-500 text-white p-2 rounded-lg" onclick="add('2')">2</button>
+            <button class="bg-blue-500 text-white p-2 rounded-lg" onclick="add('3')">3</button>
+            <button class="bg-yellow-500 text-white p-2 rounded-lg" onclick="add('+')">+</button>
+        </div>
+        <div class="flex space-x-2 mt-2">
+            <button class="bg-blue-500 text-white p-2 rounded-lg" onclick="add('4')">4</button>
+            <button class="bg-blue-500 text-white p-2 rounded-lg" onclick="add('5')">5</button>
+            <button class="bg-blue-500 text-white p-2 rounded-lg" onclick="add('6')">6</button>
+            <button class="bg-yellow-500 text-white p-2 rounded-lg" onclick="add('-')">-</button>
+        </div>
+        <div class="flex space-x-2 mt-2">
+            <button class="bg-blue-500 text-white p-2 rounded-lg" onclick="add('7')">7</button>
+            <button class="bg-blue-500 text-white p-2 rounded-lg" onclick="add('8')">8</button>
+            <button class="bg-blue-500 text-white p-2 rounded-lg" onclick="add('9')">9</button>
+            <button class="bg-yellow-500 text-white p-2 rounded-lg" onclick="add('*')">*</button>
+        </div>
+        <div class="flex space-x-2 mt-2">
+            <button class="bg-blue-500 text-white p-2 rounded-lg" onclick="add('0')">0</button>
+            <button class="bg-green-500 text-white p-2 rounded-lg" onclick="samaDengan()">=</button>
+            <button class="bg-red-500 text-white p-2 rounded-lg" onclick="clearInput()">C</button>
+            <button class="bg-yellow-500 text-white p-2 rounded-lg" onclick="add('/')">/</button>
+        </div>
+        <p id="result" class="mt-4"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
