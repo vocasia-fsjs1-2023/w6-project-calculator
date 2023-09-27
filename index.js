@@ -18,7 +18,7 @@ function samaDengan() {
     }
 }
 
-function clear() {
+function clearInput() {
     const inputElement = document.getElementById('input');
     inputElement.value = '';
     const resultElement = document.getElementById('result');
