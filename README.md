@@ -1,3 +1,6 @@
+# Tampilan
+https://fahriwijayaa.github.io/calculators/
+
 # w6-project-calculator
 
 ## Buatlah Aplikasi Calculator menggunakan html, CSS, dan javascript.
