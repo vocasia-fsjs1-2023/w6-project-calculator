@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Sederhana Dea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <form class="display">
+            <input id="screen"
+            placeholder="0">
+        </form>
+        <section class="button">
+            <div class="tombol-kiri">
+                <button class="tombol" onclick="display('clear')"><strong>AC</strong></button>
+                <button class="tombol" onclick="display('del')"><strong>DEL</strong></button>
+                <button class="tombol" onclick="display('%')"><strong>%</strong></button>
+                <script language="JavaScript">
+                    for (let i = 9; i >= 1; i--) {
+                        document.write(
+                            `<button class=tombol onclick=display(${i})>`+i+`</button>`
+                        )
+                    }
+                </script>
+                <button class="tombol" onclick="display('.')"><strong>.</strong></button>
+                <button class="tombol" onclick="display('0')">0</button>
+                <button class="tombol" onclick="display('00')">00</button>
+            </div>
+            <div class="tombol-kanan">
+                <button class="tombol" onclick="display('/')"><strong>÷</strong></button>
+                <button class="tombol" onclick="display('*')"><strong>x</strong></button>
+                <button class="tombol" onclick="display('-')"><strong>-</strong></button>
+                <button class="tombol" onclick="display('+')"><strong>+</strong></button>
+                <button class="tombol" onclick="display('action')"><strong>=</strong></button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
