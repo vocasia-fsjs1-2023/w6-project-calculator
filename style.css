@@ -57,7 +57,6 @@ body {
 
 .tombol{
     background-color: #f1f3f5;
-    box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgb(0,0,0,0);
     border: none;
     height: 50px;
     width: 50px;

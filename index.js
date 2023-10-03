@@ -7,13 +7,10 @@ const display = (a) => {
         result.value = result.value.slice(0, -1);
     } else if (a == 'action') {
         try {
-            // Periksa apakah ekspresi mengandung operator persen (%)
             if (result.value.includes('%')) {
-                // Jika ada operator persen, hitung persentase
                 let expression = result.value.replace('%', '/100');
                 result.value = eval(expression);
             } else {
-                // Jika tidak ada operator persen, hitung ekspresi biasa
                 result.value = eval(result.value);
             }
         } catch (error) {
