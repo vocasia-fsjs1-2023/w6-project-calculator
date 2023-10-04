@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kalkulator Yusuf</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .f {
+        width: 100%;
+        max-width: 350px;
+      }
+      * {
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+
+  <body class="d-flex bg-dark bg-gradient">
+    <div class="f rounded-1 bg-white bg-opacity-50 boder mx-auto my-auto p-3 text-white d-grid align-content-start">
+      <h5 class="text-center" style="overflow: hidden">Kalkulator</h5>
+      <input type="text" name="n" id="n" class="form-control text-end shadow-none border-0 form-control-lg text-bg-white shadow-none rounded-1" placeholder="0" />
+      <div class="row g-2 mt-1">
+        <div class="col-3">
+          <button onclick="c()" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">C</button>
+        </div>
+        <div class="col-6">
+          <button onclick="ha()" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-2">Hapus</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i('/')" class="btn btn-lg text-bg-warning col-12 shadow-none border-0 rounded-1">/</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i(7)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">7</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i(8)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">8</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i(9)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">9</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i('*')" class="btn btn-lg text-bg-warning col-12 shadow-none border-0 rounded-1">x</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i(4)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">4</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i(5)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">5</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i(6)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">6</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i('-')" class="btn btn-lg text-bg-warning col-12 shadow-none border-0 rounded-1">-</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i(1)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">1</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i(2)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">2</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i(3)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">3</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i('+')" class="btn btn-lg text-bg-warning col-12 shadow-none border-0 rounded-1">+</button>
+        </div>
+        <div class="col-3">
+          <button onclick="i('.')" class="btn btn-lg text-bg-warning col-12 shadow-none border-0 rounded-1">.</button>
+        </div>
+        <div class="col-6">
+          <button onclick="i(0)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1">0</button>
+        </div>
+        <div class="col-3">
+          <button onclick="h()" class="btn btn-lg text-bg-warning col-12 shadow-none border-0 rounded-1">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      var u = document.getElementById("n");
+
+      function i(value) {
+        u.value += value;
+      }
+
+      function c() {
+        u.value = "";
+      }
+
+      function ha() {
+        let bs = u.value.length - 1;
+        u.value = u.value.slice(0, bs);
+      }
+
+      function h() {
+        u.value = eval(u.value);
+      }
+    </script>
+  </body>
+</html>
