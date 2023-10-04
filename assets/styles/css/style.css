@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background: url("../images/bg-math.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    /* background-image: linear-gradient(rgba(79, 51, 176, 1), rgba(210, 53, 165)); */
+}
+
+.card {
+    background-color: #f1f3f5;
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgb(0, 0, 0, 0.16);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.display {
+    background-color: #f1f3f5;
+    height: 30%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 12px rgb(0, 0, 0, 0.16), 5px 5px 12px #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.display input {
+    background-color: transparent;
+    border: none;
+    text-align: end;
+    font-size: 30px;
+    width: 90%;
+    outline: none;
+}
+
+.button {
+    height: 70%;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tombol-kiri {
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.tombol {
+    background-color: #f1f3f5;
+    box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgb(0, 0, 0, 0.16);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: tomato;
+    border: none;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.tombol:hover {
+    transform: scale(1.1);
+}
+
+.tombol-kanan {
+    width: 30%;
+    background-color: red;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: inset 5px 5px 12px rgb(0, 0, 0, 0.16), 5px 5px 12px #e6e3c3;
+    background-color: rgb(233, 233, 171);
+    border-radius: 20px;
+}
