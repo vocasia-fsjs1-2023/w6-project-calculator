@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Dea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <form class="display">
+            <input id="screen"
+            placeholder="0">
+        </form>
+        <section class="button">
+            <div class="tombol-kiri">
+                <button class="tombol btn btn-outline-warning" onclick="display('clear')"><strong>AC</strong></button>
+                <button class="tombol btn btn-outline-warning" onclick="display('del')"><strong>DE</strong></button>
+                <button class="tombol btn btn-outline-warning" onclick="display('%')"><strong>%</strong></button>
+                <script language="JavaScript">
+                    for (let i = 9; i >= 1; i--) {
+                        document.write(
+                            `<button class="tombol btn btn-outline-warning" onclick=display(${i})>`+i+`</button>`
+                        )
+                    }
+                </script>
+                <button class="tombol btn btn-outline-warning" onclick="display('.')"><strong>.</strong></button>
+                <button class="tombol btn btn-outline-warning" onclick="display('0')">0</button>
+                <button class="tombol btn btn-outline-warning" onclick="display('00')">00</button>
+            </div>
+            <div class="tombol-kanan">
+                <button class="tombol btn btn-outline-secondary" onclick="display('/')"><strong>÷</strong></button>
+                <button class="tombol btn btn-outline-secondary" onclick="display('*')"><strong>x</strong></button>
+                <button class="tombol btn btn-outline-secondary" onclick="display('-')"><strong>-</strong></button>
+                <button class="tombol btn btn-outline-secondary" onclick="display('+')"><strong>+</strong></button>
+                <button class="tombol btn btn-outline-secondary" onclick="display('action')"><strong>=</strong></button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
