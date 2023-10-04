@@ -1,0 +1,59 @@
+body {
+    background-image: url(image/bg-math-illustration.jpg) ;
+    background-size: 60%;
+}
+
+.container-md {
+    border-color: rgb(96, 108, 118) !important;
+    border: 5px solid;
+    border-radius: 20px;
+    width: 320px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #142e50;
+    margin: auto;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+input {
+    height: 50px !important;
+    background-color: white;
+    border-radius: 5px;
+    font-size:20px;
+}
+
+.btn.btn-info {
+    width: 42px;
+    height: 42px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.btn-info:hover {
+    background-color: #474747;
+    color: white;
+    border-color: white;
+}
+
+.operator {
+    background-color: #FFCC70 !important;
+    border-style: none;
+}
+
+.operator:hover {
+    background-color: #ff7b29 !important;
+    color: white;
+}
+
+.btn-reset {
+    width: 178px !important;
+    background-color: #f84946 !important;
+    border-style: none;
+    font-weight: 500;
+}
+

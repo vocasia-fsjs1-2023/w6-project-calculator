@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-md">
+            <input type="number" class="" disabled>
+            <div class="rows">
+                <button type="button" class="btn btn-info operator">+</button>
+                <button type="button" class="btn btn-info operator">-</button>
+                <button type="button" class="btn btn-info operator">&times;</button>
+                <button type="button" class="btn btn-info operator">&divide;</button>
+            </div>
+            <div class="rows">
+                <button type="button" class="btn btn-info">9</button>
+                <button type="button" class="btn btn-info">8</button>
+                <button type="button" class="btn btn-info">7</button>
+                <button type="button" class="btn btn-info">6</button>
+            </div>
+            <div class="rows">
+                <button type="button" class="btn btn-info">5</button>
+                <button type="button" class="btn btn-info">4</button>
+                <button type="button" class="btn btn-info">3</button>
+                <button type="button" class="btn btn-info">2</button>
+            </div>
+            <div class="rows">
+                <button type="button" class="btn btn-info">1</button>
+                <button type="button" class="btn btn-info">0</button>
+                <button type="button" class="btn btn-info operator">AC</button>
+                <button type="button" class="btn btn-info operator">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-md">
+            <input type="text" id="display" disabled>
+            <div class="rows">
+                <button type="button" class="btn btn-info operator" onclick="addNumber('+')">+</button>
+                <button type="button" class="btn btn-info operator" onclick="addNumber('-')">-</button>
+                <button type="button" class="btn btn-info operator" onclick="addNumber('*')">&times;</button>
+                <button type="button" class="btn btn-info operator" onclick="addNumber('/')">&divide;</button>
+            </div>
+            <div class="rows">
+                <button type="button" class="btn btn-info" onclick="addNumber('9')">9</button>
+                <button type="button" class="btn btn-info" onclick="addNumber('8')">8</button>
+                <button type="button" class="btn btn-info" onclick="addNumber('7')">7</button>
+                <button type="button" class="btn btn-info" onclick="addNumber('6')">6</button>
+            </div>
+            <div class="rows">
+                <button type="button" class="btn btn-info" onclick="addNumber('5')">5</button>
+                <button type="button" class="btn btn-info" onclick="addNumber('4')">4</button>
+                <button type="button" class="btn btn-info" onclick="addNumber('3')">3</button>
+                <button type="button" class="btn btn-info" onclick="addNumber('2')">2</button>
+            </div>
+            <div class="rows">
+                <button type="button" class="btn btn-info" onclick="addNumber('1')">1</button>
+                <button type="button" class="btn btn-info" onclick="addNumber('0')">0</button>
+                <button type="button" class="btn btn-info" onclick="addNumber('.')">.</button>
+                <button type="button" class="btn btn-info operator" onclick="calculateOperation()">=</button>
+            </div>
+            <div class="rows">
+                <button class="btn btn-info btn-reset" onclick="clearCalculatorScreen()">AC</>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
