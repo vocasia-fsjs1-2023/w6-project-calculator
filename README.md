@@ -1,3 +1,6 @@
+TAMPILAN CALCULATOR
+https://anitasfyun.github.io/anita_calculator/
+
 # w6-project-calculator
 
 ## Buatlah Aplikasi Calculator menggunakan html, CSS, dan javascript.
