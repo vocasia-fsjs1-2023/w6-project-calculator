@@ -1,0 +1,25 @@
+/* style.css */
+.calculator {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #9a9a9a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px;
+}
+
+#display {
+    margin-bottom: 10px;
+}
